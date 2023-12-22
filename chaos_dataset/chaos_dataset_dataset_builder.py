@@ -52,7 +52,7 @@ class Builder(tfds.core.GeneratorBasedBuilder):
         return self.dataset_info_from_configs(
             features=tfds.features.FeaturesDict({
                 "image": tfds.features.Image(
-                    shape=(None, None, 1), dtype=tf.uint16
+                    shape=(None, None, 1), dtype=tf.float32
                 ),
                 "segmentation_mask": tfds.features.Image(
                     shape=(None, None, 1)
